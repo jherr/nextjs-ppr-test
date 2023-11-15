@@ -1,4 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  experimental: {
+    ppr: true,
+  },
+  images: {
+    domains: ["localhost", "raw.githubusercontent.com"],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
